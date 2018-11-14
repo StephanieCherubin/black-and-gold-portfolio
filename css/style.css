@@ -1,0 +1,500 @@
+html {
+  font-size: 10px;
+}
+
+body,html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  }
+
+.button {
+  display: inline;
+}
+
+.btn-icon {
+  position: relative;
+  border: none;
+  overflow: hidden;
+}
+
+.btn-icon > span {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  margin-top: -25px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  color: #777;
+  font-size: 48px;
+  opacity: .2;
+  -webkit-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+  -moz-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+  -o-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+  -ms-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+  transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+}
+
+
+button + label{
+  margin-left: 1em;
+}
+
+/* ==============================
+   Common styles
+   ============================== */
+
+.align-center{ text-align:center !important; }
+.align-left{ text-align:left !important;}
+.align-right{ text-align:right !important; }
+.left{float:left !important;}
+.right{float:right !important;}
+.relative{position:relative;}
+.hidden{display:none;}
+.inline-block{display:inline-block;}
+.white{ color: #FBFBFB !important; }
+.black{ color: #050706 !important; }
+.black-flat{ color: #101010  !important; }
+.black-comp{ color: #131313 !important; }
+.black-grey{ color: #1f1f1f !important; }
+.slate { color: #4c4d4f !important; }
+.fog { color: #b2b3b7 !important; }
+.grey { color: #A3A09B !important; }
+.cement { color: #e7e5d9 !important; }
+.gold { color: #B6944C !important;}
+.stick-fixed{
+  position: fixed !important;
+  top: 0;
+  left: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+/* ==============================
+    Page Titles
+   ============================== */
+
+.title h3 {
+  margin-bottom: 5px;
+  padding-top: 11px;
+
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.title p {
+  line-height: 21px;
+  margin-top: 25px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 200;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+.horizontal-gold {
+  background: #B6944C;
+  display: inline-block;
+  height: 5px;
+  width: 100px;
+}
+
+.horizontal-slate {
+  background: #4c4d4f;
+  display: inline-block;
+  height: 5px;
+  width: 100px;
+}
+
+.horizontal-black {
+  background: #050706;
+  display: inline-block;
+  height: 5px;
+  width: 100px;
+}
+
+.horizontal-grey {
+  background: #999999;
+  display: inline-block;
+  height: 5px;
+  width: 100px;
+}
+
+/* ==============================
+   Hero Section
+   ============================== */
+
+.home-section {
+  height: 100vh;
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #B6944C;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+.home-content {
+  height: 100%;
+  width: 100%;
+  display: table;
+  position: relative;
+  text-align: center;
+}
+
+.home-text{
+  display: table-cell;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.hero-title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  letter-spacing: 0.7em;
+  line-height: 1.4;
+  margin-top: 0;
+  position: relative;
+  text-transform: uppercase;
+  color: black;
+}
+
+.hero-logo {
+  vertical-align: middle;
+  border: 0;
+  max-width: 100%;
+  height: auto;
+  font-family: 'Sedgwick Ave Display', cursive;
+  color: black;
+  font-size: 30px;
+}
+
+.scroll-down{
+  height: 40px;
+  width: 40px;
+  bottom: 20px;
+  left: 50%;
+  margin-left: -20px;
+  position: absolute;
+  text-align: center;
+  text-decoration: none;
+
+  -webkit-transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
+  -moz-transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
+  -o-transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
+  transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
+}
+
+.scroll-down:before{
+  height: 20px;
+  width: 20px;
+  background: #b6944c;
+  bottom: 0;
+  content: "";
+  display: block;
+  left: 50%;
+  margin: 0 0 0 -10px;
+  position: absolute;
+
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+
+  -webkit-transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
+  -moz-transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
+  -o-transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
+  transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
+
+  z-index: 1;
+}
+
+.scroll-down:hover:before{
+  opacity: .6;
+}
+
+.scroll-down-icon{
+  height: 10px;
+  width: 10px;
+  display: block;
+  margin-left: -5px;
+  position: absolute;
+  left: 50%;
+  bottom: 4px;
+  color: #111;
+  font-size: 15px;
+
+  -webkit-animation: scroll-down-anim 1s infinite;
+  -moz-animation: scroll-down-anim 1s infinite;
+  -o-animation: scroll-down-anim 1s infinite;
+  animation: scroll-down-anim 1s infinite;
+
+   z-index: 2;
+}
+
+
+/* ==============================
+    Blog
+   ============================== */
+
+.blog-section {
+  text-align: center;
+  background: #101010;
+}
+
+.blog-holder {
+  border: 1px solid transparent;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.blog-holder > div {
+  height: 300px;
+  width: 300px;
+  background: #131313;
+  border: 5px solid #b2b3b7;
+  line-height: 30px;
+  margin: 0 auto;
+}
+
+.blog-title h3 {
+  padding-top: 10px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.blog-title p {
+  line-height: 30px;
+  margin: 10px;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+   font-weight: 600;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+
+/* ==============================
+   Boxes
+   ============================== */
+
+.container-fluid {
+  padding: 0;
+}
+
+.boxes {
+  height: 400px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.boxes h2 {
+  vertical-align: middle;
+  font-size: 72px;
+  line-height: 400px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #171717;
+}
+
+.boxes h2 span {
+  vertical-align: middle;
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+
+.box-1 {
+  background-color: #B6944C;
+  background-position: center center;
+  background-size: auto 70%;
+  height: 100%;
+}
+
+.box-2 {
+  background-color: #B6944C;
+  background-size: auto 25%;
+  background-position: center center;
+  height: 100%;
+}
+
+.box-3 {
+  background-color: #b6944c;
+  background-size: auto 25%;
+  height: 100%;
+  background-position: center center;
+}
+
+.box-4 {
+  background: #B6944C;
+  background-size: auto 25%;
+  background-size: 100%;
+  height: 100%;
+}
+
+
+/* ==============================
+   Flip Card
+   ============================== */
+
+.flip-card {
+  background-color: transparent;
+  width: 700px;
+  height: 400px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: #000;
+  z-index: 2;
+}
+
+.flip-card-back {
+  background-color: #101010;
+  color: #fff;
+  transform: rotateY(180deg);
+  z-index: 1;
+}
+
+
+/* ==============================
+   Footer
+   ============================== */
+
+.intermediate-section {
+  padding: 240px 0;
+}
+
+.mastfoot {
+  padding: 0;
+}
+
+span.gold{
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-size: 20px;
+    letter-spacing: 0.2em;
+}
+.footer {
+  background: black;
+}
+
+.arrowww i {
+  color: #b6944c;
+}
+
+.arrowww i:hover {
+  color: #fff;
+}
+
+.btn.btn-mod {
+  color: #fff;
+  border: 5px solid rgba(255,255,255, .75);
+  border-radius: 0;
+  background: transparent;
+  padding: 12px 45px;
+  font-size: 13px;
+    transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+  text-align: center;
+  vertical-align: middle;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+.btn.btn-mod:hover {
+  color: #B6944C;
+    transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+}
+
+/* ==============================
+    Social Media
+   ============================== */
+
+   a, a:hover {
+   	text-decoration: none;
+   }
+
+   .socialbtns, .socialbtns ul, .socialbtns li {
+     margin: 0;
+     padding: 5px;
+   }
+
+   .socialbtns li {
+       list-style: none outside none;
+       display: inline-block;
+   }
+
+   .socialbtns .fa {
+   	width: 40px;
+       height: 28px;
+   	color: #000;
+   	background-color: #B6944C;
+   	border: 1px solid #000;
+   	padding-top: 12px;
+   	border-radius: 22px;
+   	-moz-border-radius: 22px;
+   	-webkit-border-radius: 22px;
+   	-o-border-radius: 22px;
+   }
+
+   .socialbtns .fa:hover {
+   	color: #B6944C;
+   	background-color: #000;
+   	border: 1px solid #000;
+   }
