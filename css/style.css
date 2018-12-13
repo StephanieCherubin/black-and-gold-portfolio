@@ -32,7 +32,7 @@ body,html {
 .fog { color: #b2b3b7 !important; }
 .grey { color: #A3A09B !important; }
 .cement { color: #e7e5d9 !important; }
-.gold { color: #B6944C !important;}
+.blue { color: rgb(0, 148, 237)!important;}
 .stick-fixed{
   position: fixed !important;
   top: 0;
@@ -59,7 +59,7 @@ body,html {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: rgb(17, 0, 125);
+  background-color: #000080;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -80,10 +80,11 @@ body,html {
 }
 
 .hero-title {
-  font-family: 'Raleway', sans-serif;
-  font-size: 48px;
+  font-family: 'Sedgwick Ave Display', cursive;
+  /* font-family: 'Raleway', sans-serif; */
+  font-size: 88px;
   font-weight: 400;
-  letter-spacing: 0.7em;
+  letter-spacing: 0.2em;
   line-height: 1.4;
   margin-top: 0;
   position: relative;
@@ -91,7 +92,7 @@ body,html {
   color: black;
 }
 
-.hero-logo {
+/* .hero-logo {
   vertical-align: middle;
   border: 0;
   max-width: 100%;
@@ -99,12 +100,12 @@ body,html {
   font-family: 'Sedgwick Ave Display', cursive;
   color: black;
   font-size: 30px;
-}
+} */
 /* ==============================
     Scroll Down Arrow
    ============================== */
 #scroll-down {
- color: rgb(17, 0, 125);
+ color: #000080;
  text-decoration: none;
 }
 
@@ -113,9 +114,9 @@ body,html {
    margin: 8% 0;
  }
  .bounce {
-   -moz-animation: bounce 2s infinite;
-   -webkit-animation: bounce 2s infinite;
-   animation: bounce 2s infinite;
+   -moz-animation: bounce 3s infinite;
+   -webkit-animation: bounce 3s infinite;
+   animation: bounce 3s infinite;
  }
 
  @keyframes bounce {
@@ -130,12 +131,12 @@ body,html {
    }
  }
 /* ==============================
-    Blog
+    Blog Posts
    ============================== */
 
 .blog-section {
   text-align: center;
-  background: #101010;
+  background: #010101;
 }
 
 .blog-holder {
@@ -209,28 +210,29 @@ body,html {
 }
 
 .box-1 {
-  background-color: rgb(17, 0, 125);
+  background-color: #010101;
   background-position: center center;
   background-size: auto 70%;
   height: 100%;
 }
 
 .box-2 {
-  background-color: rgb(17, 0, 125);
+  background-color: #010101;
   background-size: auto 25%;
   background-position: center center;
   height: 100%;
 }
 
 .box-3 {
-  background-color: rgb(17, 0, 125);
+  background-color: #010101;
   background-size: auto 25%;
   height: 100%;
   background-position: center center;
+  padding-left: 0;
 }
 
 .box-4 {
-  background: rgb(17, 0, 125);
+  background: #010101;
   background-size: auto 25%;
   background-size: 100%;
   height: 100%;
@@ -317,20 +319,17 @@ span.gold{
  }
 
  .socialbtns .fa {
- 	width: 40px;
-  height: 28px;
+ 	width: 60px;
+  height: 42px;
  	color: #000;
- 	background-color: rgb(17, 0, 125);
+ 	background-color: #000080;
  	border: 1px solid #000;
- 	padding-top: 12px;
- 	border-radius: 22px;
- 	-moz-border-radius: 22px;
- 	-webkit-border-radius: 22px;
- 	-o-border-radius: 22px;
+ 	padding-top: 14px;
+ 	border-radius: 15px;
  }
 
  .socialbtns .fa:hover {
- 	color: rgb(17, 0, 125)
+ 	color: #000080;
  	background-color: #000;
  	border: 1px solid #000;
  }
