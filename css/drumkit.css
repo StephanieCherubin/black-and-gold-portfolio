@@ -8,7 +8,6 @@ html {
   background: linear-gradient(79deg, blue, #000);
   background-size: 400% 400%;
   animation: custom-animation-gradient 30s ease infinite;
-
 }
 
 @keyframes custom-animation-gradient {
@@ -42,14 +41,14 @@ p {
 }
 
 .keys {
-    align-items: center;
-    justify-content: center;
-    display: grid;
-    grid-gap: 0px;
-    grid-template-areas:
-     "s t e"
-     "p h a"
-     "n i c"
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  grid-gap: 0px;
+  grid-template-areas:
+   "s t e"
+   "p h a"
+   "n i c"
 }
 
 .key {
